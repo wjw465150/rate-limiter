@@ -10,7 +10,6 @@ RateLimiter的原理类似于令牌桶，它主要由许可发出的速率来定
 #### 项目通过Maven的`pom.xml`引入。
 
 ```xml
-
 <dependency>
     <groupId>com.github.wjw465150</groupId>
     <artifactId>rate-limiter-spring-boot-starter</artifactId>
@@ -21,9 +20,8 @@ RateLimiter的原理类似于令牌桶，它主要由许可发出的速率来定
 
 #### 或者通过Gradle的`build.gradle`引入
 
-```gradle
-// https://mvnrepository.com/artifact/com.github.wjw465150/aop-log
-implementation group: 'com.github.wjw465150', name: rate-limiter-spring-boot-starter', version: '1.2.0'
+```groovy
+implementation group: 'com.github.wjw465150', name: 'rate-limiter-spring-boot-starter', version: '1.2.0'
 ```
 
 #### 使用@RateLimit注解，进行限流
