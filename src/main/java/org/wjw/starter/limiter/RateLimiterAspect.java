@@ -29,7 +29,7 @@ import com.google.common.util.concurrent.RateLimiter;
  */
 @Component
 @Aspect
-//表示开启AOP代理自动配置，如果配@EnableAspectJAutoProxy表示使用cglib进行代理对象的生成；
+//表示开启AOP代理自动配置
 //设置@EnableAspectJAutoProxy(exposeProxy=true)表示通过aop框架暴露该代理对象，aopContext能够访问.
 @EnableAspectJAutoProxy(exposeProxy = true)
 public class RateLimiterAspect {

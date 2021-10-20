@@ -41,13 +41,13 @@ import org.wjw.starter.limiter.RateLimit;
 
 @Component
 public class MyRateLimitTask {
-  @RateLimit(permitsPerSecond = 2)
+  @RateLimit(/* 每秒允许的许可数 */ permitsPerSecond = 2)
   void doRunWork1(int i) {
     System.out.println(currentTime() + ": doRunWork1 call execute.." + i);
   }
 
-  @RateLimit(permitsPerSecond = 1,
-             permits = 2)
+  @RateLimit(/* 每秒允许的许可数 */ permitsPerSecond = 1,
+             /* 此方法每次需要获得许可证的数量,默认是1个 */ permits = 2)
   void doRunWork2(int i) {
     System.out.println(currentTime() + ": doRunWork2 call execute.." + i);
   }
