@@ -28,7 +28,7 @@ import com.google.common.util.concurrent.RateLimiter;
  * 限流切面类
  */
 @Component
-@Aspect
+@Aspect  //作用是把当前类标识为一个切面供容器读取
 //表示开启AOP代理自动配置
 //设置@EnableAspectJAutoProxy(exposeProxy=true)表示通过aop框架暴露该代理对象，aopContext能够访问.
 @EnableAspectJAutoProxy(exposeProxy = true)
